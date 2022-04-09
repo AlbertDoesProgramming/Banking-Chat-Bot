@@ -1,0 +1,85 @@
+{
+    "intents": [
+        {
+            "tag":"greeting",
+            "patterns": [
+                "hi",
+                "hello",
+                "hey",
+                "howdy",
+                "How are you"
+            ],
+            "responses": [
+                "Hey thanks for saying hello!",
+                "Hey there!",
+                "Hi there!",
+                "Hello there!",
+                "Howdy partner!",
+                "What's up?"
+            ]
+        },
+        {
+            "tag":"goodbye",
+            "patterns":[
+                "goodbye",
+                "bye",
+                "see you later",
+                "see ya",
+                "later",
+                "laters",
+                "see ya later",
+                "bye bye",
+                "ta ta"
+            ],
+            "responses":[
+                "Bye bye!",
+                "See you later!",
+                "Have a nice day!",
+                "Bye bye!"
+            ]
+        },
+        {
+            "tag":"weightloss",
+            "patterns": [
+                "I want to lose weight",
+                "I want to lose fat",
+                "I'm trying to lose weight",
+                "I'm trying to lose fat",
+                "I want to be thinner",
+                "I want to be slim",
+                "I'm trying to be thinner",
+                "I'm trying to be slim",
+                "I want to get lean"                
+            ],
+            "responses": [
+                "I'm glad to hear that you want to lose weight!",
+                "I'm glad to hear that you want to lose fat!",
+                "I'm glad to hear that you want to be thinner!",
+                "I'm glad to hear that you want to be slim!",
+                "I'm glad to hear that you want to get lean!"
+            ]
+        },
+        {
+            "tag":"muscle",
+            "patterns": [
+                "I want to build muscle",
+                "I want to build muscle mass",
+                "I'm trying to build muscle",
+                "I'm trying to build muscle mass",
+                "I want to be stronger",
+                "I'm trying to be stronger",
+                "I want to be more muscular",
+                "I'm trying to be more muscular",
+                "I want to be more muscular"
+            ],
+            "responses": [
+                "I'm glad to hear that you want to build muscle!",
+                "I'm glad to hear that you want to build muscle mass!",
+                "I'm glad to hear that you want to be stronger!",
+                "I'm glad to hear that you want to be more muscular!",
+                "I'm glad to hear that you want to be more muscular!"
+            ]
+        }
+
+    ]
+}
