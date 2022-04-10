@@ -1,6 +1,6 @@
 from nltk_utils import tokenize, stem, bag_of_words
-from ChatDataset import ChatDataset
-from model import NeuralNet
+from Classes.ChatDataset import ChatDataset
+from Classes.Model import NeuralNet
 import numpy as np
 import json
 import re
@@ -83,9 +83,9 @@ def main():
             
             if (epoch +1) % 100 == 0:
                 print(f'Epoch: {epoch+1}/{num_epochs}')
-                print(f'Loss: {loss.item()}:.4f')
+                print(f'Loss: {loss.item()}:.4f') # type: ignore
 
-        print(f'Final Loss: {loss.item()}:.4f')        
+        print(f'Final Loss: {loss.item()}:.4f') # type: ignore
         
         dataModel = {
             "model_state": model.state_dict(),

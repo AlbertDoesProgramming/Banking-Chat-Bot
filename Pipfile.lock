@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c66ba21e8b91b0931b6a5fd80b9f30af8503b9adbcdd1d285df815af77434e04"
+            "sha256": "98d9e032c651c9d63fd644e7d4a38b3149627590a88cb71b0f543f20150088c7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -21,7 +21,7 @@
                 "sha256:24e1a4a9ec5bf6299411369b208c1df2188d9eb8d916302fe6bf03faed227f1e",
                 "sha256:479707fe14d9ec9a0757618b7a100a0ae4c4e236fac5b7f80ca68028141a1a72"
             ],
-            "markers": "python_version >= '3.7'",
+            "markers": "python_full_version >= '3.7.0'",
             "version": "==8.1.2"
         },
         "colorama": {
@@ -100,6 +100,14 @@
             ],
             "index": "pypi",
             "version": "==1.4.2"
+        },
+        "pysimplegui": {
+            "hashes": [
+                "sha256:1642db0b2cbe59c50da40b86af51cda3abbda6ddcad40bd04c0a0550112b3d46",
+                "sha256:196e81c0a437eac4893595f2ee69515b9841e608d351bd3c577dd7a913454f51"
+            ],
+            "index": "pypi",
+            "version": "==4.59.0"
         },
         "python-dateutil": {
             "hashes": [
