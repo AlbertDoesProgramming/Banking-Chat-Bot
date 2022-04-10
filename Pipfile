@@ -9,6 +9,7 @@ numpy = "*"
 pandas = "*"
 scikit-learn = "*"
 torch = "*"
+pyyaml = "*"
 
 [dev-packages]
 

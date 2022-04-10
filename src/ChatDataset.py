@@ -13,5 +13,3 @@ class ChatDataset(Dataset):
     
     def __len__(self):
         return self.n_samples
-    
-    
