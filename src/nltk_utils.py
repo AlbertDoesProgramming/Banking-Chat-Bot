@@ -2,7 +2,6 @@ import nltk
 from nltk.stem import porter
 import numpy as np
 
-nltk.download('punkt')
 stemmer = porter.PorterStemmer()
 
 def tokenize(text):
@@ -28,4 +27,7 @@ def bag_of_words(tokenizedSentence, allWords):
         if word in tokenizedSentence:
             bag[idx] = 1.0    
     return bag
+
+if __name__ == "__main__":
+    nltk.download('punkt')
     

@@ -61,7 +61,7 @@ def main():
     def train_model(X_train, Y_train, batch_size, hidden_size, output_size, input_size, learning_rate, num_epochs):
         
         dataset = ChatDataset(X_train, Y_train)
-        train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True)
+        train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=2)
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         model = NeuralNet(input_size, hidden_size, output_size).to(device)
 
@@ -100,7 +100,8 @@ def main():
     
     # load data
     paramsPath = r'src\params.yml'    
-    intents = load_json_data(r'data\training_data\train.json')
+    #intents = load_json_data(r'data\training_data\train.json')
+    intents = load_json_data(r'data\training_data\data_full_response_data_transformed.json')
     allWords, tags, xy = extract_allwords_tags_xy(intents)
     X_train, Y_train = get_XY_training_data(xy, allWords, tags)
 
